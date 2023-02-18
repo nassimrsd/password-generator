@@ -12,7 +12,12 @@ while i != "x":
     length = int(input("How many characters should your password contain?  (More than 8 characters is recommended)\n"))
     password = "".join(random.sample(string,length))
     print("password:\n" + password)
+    choice = input("Do you want your password saved in passwords.txt yes/no\n")
 
+    if choice == "yes" or choice == "Yes":
+        name = input("Give your password a name\n")
+        file = open("passwords.txt","w")
+        file.write(f"Name:{name}\nPassword:{password}")
 
     i = input("Enter 'x' to quit")
 
