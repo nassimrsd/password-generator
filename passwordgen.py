@@ -11,3 +11,4 @@ length = int(input("how many characters should your password contain?  (More tha
 
 password = "".join(random.sample(string,length))
 
+print("password:\n" + password)
