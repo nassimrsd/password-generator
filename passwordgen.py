@@ -16,7 +16,7 @@ while i != "x":
 
     if choice == "yes" or choice == "Yes":
         name = input("Give your password text file a name\n")
-        file = open(f"passwords/{name}.txt","w")
+        file = open(f"{name}.txt","w")
         file.write(f"Name:{name}\nPassword:{password}")
 
     i = input("Enter 'x' to quit")
